@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaCity!!!</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .intro {
+    background: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Alata', sans-serif;
+    color: white;
+}
+.heading {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+}
+.sectiontwo {
+    height: 50vh;
+}
+.about_us {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+}
+.content {
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.about-pic {
+    align-items: center;
+}
+.sectionthree {
+    background: url(../images/backgorund2.jpg);
+    height: 45vh;
+}
+.menu {
+    color: white;
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+
+}
+.sectionfour h4{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+.cont{
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+.sectionfour{
+    height: 120vh;
+}
+footer {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <section class="intro">
+        <div class="heading">
+            <h1><em>Welcome to PizzaCity!!!</em></h1>
+            <p>You Choose, We Deliver.</p>
+        </div>
+    </section>
+
+    <section class="sectiontwo">
+        <div class="about_us">
+            <h2><em><strong>About Us:</strong></em></h2>
+        </div>
+        <div class="container" id="about-us">
+            <div class="col-sm-12 d-flex flex-xs-column">
+              <div class="col-sm-7">
+                  <div class="about-pic">
+                    <img src="images/page2.jpg" alt="about-us">
+                  </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="content">
+                  <h3>Who Are We?</h3>
+                  <p>PizzaCity is a new and upcomig pizza restaurant that has been in the pizza game for about a year now and offers a very unique atmosphere for customers in 
+                    addition to home delivery services for all pizza orders. We know that pizza is a family meal 
+                    which is popular around the world and that has resulted in a large number of chains of pizza 
+                    restaurants but none of them is the better than PizzaCity.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionthree">
+        <div class="menu">
+            <h3>Menu:</h3>
+        </div>
+        <div class="menu col-md-12">
+            <div class="menu-overlay">
+                <div class="pizza-menu row text-center">
+                    <figure class="col-sm-4">
+                        <img src="images/small.png" alt="small-pizza">
+                        <figcaption class="text-white">Small<br>Ksh. 1000</figcaption>
+                    </figure>
+                    <figure class="col-sm-4" alt="medium-pizza">
+                        <img src="images/meduim.png" alt="medium-pizza">
+                        <figcaption class="text-white">Medium<br>Ksh. 1500</figcaption>
+                    </figure>
+                    <figure class="col-sm-4" alt="large pizza">
+                        <img src="images/large.png" alt="large-pizza">
+                        <figcaption class="text-white">Large<br>Ksh. 2000</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionfour">
+        <h4>Order Your Pizza:</h4>
+        <div class="container-fluid">
+            <div class="cont">
+                <div class="placeOrder">
+                    <form>
+                        <div class="card">
+                            <div class="card-body">
+                            <!-- Pizza size: -->
+                            <div class="form-group">
+                                <div id="size">
+                                    <label for="pizzaSize">Size</label>
+                                    <select class="browser-default custom-select" id="pizzaSize">
+                                        <option label="Choose"></option>
+                                        <option label="Large - Ksh 2000" value="2000"></option>
+                                        <option label="Medium - Ksh 1500" value="1500"></option>
+                                        <option label="Small - Ksh 1000" value="1000"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Pizza crust: -->
+                            <div class="form-group">
+                                <div id="crust">
+                                    <label for="pizzaCrust">Crust</label>
+                                    <select class="browser-default custom-select" id="pizzaCrust">
+                                        <option label="Choose"></option>
+                                        <option label="Crispy - Ksh 700" value="700"></option>
+                                        <option label="Stuffed - Ksh 600" value="600"></option>
+                                        <option label="Glutten Free - Ksh 500" value="500"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Pizza topping: -->
+                            <div class=" form-group">
+                                <div id="toppings">
+                                    <label for="pizzaTopping">Meat</label>
+                                    <select class="browser-default custom-select" id="pizzaTopping">
+                                        <option label="Choose"></option>
+                                        <option label="Bacon - Ksh 120" value="120"></option>
+                                        <option label="Beef - Ksh 100" value="100"></option>
+                                        <option label="Sausages - Ksh 100" value="100"></option>
+                                        <option label="Chicken - Ksh 100" value="100"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div id="toppings">
+                                    <label for="pizzaTopping">Veggies</label>
+                                    <select class="browser-default custom-select" id="pizzaTopping">
+                                        <option label="Choose"></option>
+                                        <option label="Spinach - Ksh 130" value="130"></option>
+                                        <option label="Tomatoes - Ksh 100" value="100"></option>
+                                        <option label="Corriender - Ksh 80" value="80"></option>
+                                        <option label="Onions - Ksh 60" value="60"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div id="toppings">
+                                        <label for="pizzaTopping">Cheese</label>
+                                        <select class="browser-default custom-select" id="pizzaCheese">
+                                            <option label="Choose"></option>
+                                            <option label="Ricotta - Ksh 130" value="130"></option>
+                                            <option label="Parmesam - Ksh 100" value="100"></option>
+                                            <option label="Cheddar - Ksh 80" value="80"></option>
+                                            <option label="Provolone - Ksh 60" value="60"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <!-- Number of pizza ordered: -->
+                            <div class="form-group">
+                                <div id="number">
+                                    <label for="quantity">Quantity</label>
+                                    <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0"
+                                        max="" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- A submit button to confirm the order -->
+                        <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
+                            onclick="totalAmount();"><strong>Confirm Order</strong></button>
+    
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </section>
+
+</section class="finalsection">
+<footer>
+    <div class="container-fluid footer row">
+        <div class="col-md-6 Get in touch">
+            <h4><strong>Get in touch</strong></h4>
+            <p><strong>Junction Mall,First Floor</strong></p>
+            <p><strong>0746521280</strong></p>
+            <p><strong>info@PizzaCity.com</strong></p>
+        </div>
+        <div class="col-md-6 social icons">
+            <h4><strong>Socials:</strong></h4>
+            <img src="images/social_icons/behance.png" alt="">
+    <img src="images/social_icons/dribble.png" alt="">
+    <a href="https://www.facebook.com/"><img src="images/social_icons/facebook.png" alt=""></a>
+    <img src="images/social_icons/flickr.png" alt="">
+    <img src="images/social_icons/g_plus.png" alt="">
+    <a href="https://www.pinterest.com/"><img src="images/social_icons/pinterest.png" alt=""></a>
+    <a href="https://www.skype.com/en/"><img src="images/social_icons/skype.png" alt=""></a>
+    <img src="images/social_icons/stumble_upon.png" alt="">
+    <a href="https://twitter.com/home?lang=en"><img src="images/social_icons/twitter.png" alt=""></a>
+    <a href="https://youtube.com/"><img src="images/social_icons/you_tube.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="pizza.js"></script>
+</body>
+</html>
